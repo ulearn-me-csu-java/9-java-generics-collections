@@ -1,0 +1,57 @@
+package com.example.task01;
+
+import org.joor.Reflect;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Task01MainTest {
+
+    static ITests impl;
+
+    @BeforeAll
+    public static void before() throws URISyntaxException, IOException {
+        String classContent = new String(Files.readAllBytes(Paths.get(Task01MainTest.class.getResource("/TestsImpl.java").toURI())));
+        impl = Reflect.compile("com.example.task01.TestsImpl", classContent).create().get();
+    }
+
+    @Test
+    public void testNonEmpty() {
+        impl.testNonEmpty();
+    }
+
+    @Test
+    public void testIfPresent() {
+        impl.testIfPresent();
+    }
+
+    @Test
+    public void testEmpty() {
+        impl.testEmpty();
+    }
+
+    @Test
+    public void testHalfEmpty() {
+        impl.testHalfEmpty();
+    }
+
+    @Test
+    public void testEquals() {
+        impl.testEquals();
+    }
+
+    @Test
+    public void testEqualsOtherObjects() {
+        impl.testEqualsOtherObjects();
+    }
+
+    @Test
+    public void testPrivateConstructor() {
+        impl.testPrivateConstructor();
+    }
+
+}
