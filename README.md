@@ -4,9 +4,9 @@
 
 ## Список задач
 
-* [Задание 01 Pair](task01/README.md) — 4/20
-* [Задание 02 SavedList](task02/README.md) — 6/20
-* [Задание 03 Анаграммы](task03/README.md) — 10/20
+* [Задание 01 Pair](task01/README.md)
+* [Задание 02 SavedList](task02/README.md)
+* [Задание 03 Анаграммы](task03/README.md)
 
 ## Сборка и запуск тестов
 
