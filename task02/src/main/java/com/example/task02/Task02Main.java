@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Task02Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
         File file = new File("./testlist.dat");
 
@@ -17,5 +17,4 @@ public class Task02Main {
         System.out.println("list2: " + list2);
 
     }
-
 }
