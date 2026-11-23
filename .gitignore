@@ -36,3 +36,6 @@ out/
 
 # файлы, создаваемые SavedList при запуске Task02Main
 *.dat
+
+# ...
+export.ps1
