@@ -8,7 +8,6 @@ public class Task01Main {
 
         // TODO С корректно реализованным классом Pair должен компилироваться и успешно работать следующий код:
 
-        /*
         Pair<Integer, String> pair = Pair.of(1, "hello");
         Integer i = pair.getFirst(); // 1
         String s = pair.getSecond(); // "hello"
@@ -21,7 +20,13 @@ public class Task01Main {
         Pair<Integer, String> pair2 = Pair.of(1, "hello");
         boolean mustBeTrue = pair.equals(pair2); // true!
         boolean mustAlsoBeTrue = pair.hashCode() == pair2.hashCode(); // true!
-        */
+
+        Pair<String, Integer> pair11 = Pair.of(null, 10);
+        Pair<String, Integer> pair12 = Pair.of(null, 10);
+
+        System.out.println(pair11.getFirst()); // null
+        System.out.println(pair11.equals(pair12)); // true
+        System.out.println(pair11.hashCode() == pair12.hashCode()); // true
 
     }
 
